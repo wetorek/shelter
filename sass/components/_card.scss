@@ -1,0 +1,17 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s;
+
+    &__icon {
+        width: 10rem;
+    }
+
+    &__btn {
+        margin: 1rem auto 2rem auto;
+        border-radius: 2rem;
+    }
+
+   
+}

@@ -1,0 +1,15 @@
+.feature {
+    display: grid;
+    grid-template-columns: 1;
+
+    justify-items: center;
+    row-gap: 1.5rem;
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    &__text {
+        font-size: 1.7rem;
+    }
+}

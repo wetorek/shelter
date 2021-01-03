@@ -1,0 +1,14 @@
+.volunteers {
+    grid-column: full-start / full-end;
+    padding-bottom: 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(4rem, 1fr)) repeat(4, 1fr) repeat(
+            2,
+            minmax(4rem, 1fr)
+        );
+    row-gap: 4rem;
+
+    &__heading {
+        grid-column: 1 / -1;
+    }
+}

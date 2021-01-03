@@ -1,0 +1,42 @@
+.header {
+    background-color: $color-grey-light-1;
+    grid-column: full-start / col-end 6;
+
+    background-image: linear-gradient(
+            rgba($color-secondary, 0.7),
+            rgba($color-secondary, 0.7)
+        ),
+        url(../img/dog_background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-start;
+
+    &__logo {
+        width: 20rem;
+        color: $color-primary-svg;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 10rem;
+        }
+    }
+
+    &__heading {
+        line-height: 6rem;
+    }
+
+    &__btn {
+        margin-bottom: 3rem;
+        margin-top: auto;
+        justify-self: flex-end;
+        border-radius: 2rem;
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }
+}
